@@ -1,0 +1,15 @@
+@import '../../shared/variables.scss';
+
+.Section{
+    height: 100vh;
+    // outline: 1px solid #000000;
+    flex: 1;
+    overflow: hidden;
+
+    &--right{
+        // opacity: 0;
+        @include bp(1024){
+            display: none;
+        }
+    }
+}

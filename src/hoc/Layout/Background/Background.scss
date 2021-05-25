@@ -1,0 +1,77 @@
+@import '../../../shared/variables.scss';
+
+.Background {
+    width: 100vw;
+    position: fixed;
+    height: 100vh;
+    // display: flex;
+    z-index: -10;
+    // padding-top: $spacer_top;
+    background: $color-1;
+
+    @include bp(1024){
+        background-image: url('./assets/bg_texture_m.png');
+    }
+
+    &__wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        &--2{
+            height: 110%;
+        }
+    }
+
+    &__section{
+        flex: 1;
+        overflow: hidden;
+        &--1{
+            @include bp(1024){
+                display: none;
+            }
+        }
+        &--2{
+            display: flex;
+            justify-content: flex-end;
+        }
+        &--4{
+            $space-up: 3.1rem;
+            // $space-up-neg: calc(#{-1} * #{$space-up});
+            background-color: $color-4;
+            // transform: translateY($space-up-neg);
+            height: calc(#{100%} + #{$space-up});
+            @include bp(1024){
+                display: none;
+            }
+        }
+    }
+
+    &__img{
+        &--1{
+            width: 21.6rem;
+            height: 23.25rem;
+            margin-left: 1.05rem;
+            margin-top: 1.35rem;
+            background-image: url('./assets/bg_texture--1.png');
+        }
+        &--2{
+            width: 65rem;
+            background-position: right 0;
+            height: 65rem;
+            background-image: url('./assets/bg_left_d.png');
+            background-repeat: no-repeat;
+
+            @include bp(1024){
+                // background-image: url('./assets/bg_left_d.png');
+                background-image: url('./assets/bg_full_m.png');
+            }
+        }
+        &--3{
+            background-image: url('./assets/bg_texture_m.png');
+            width: 65rem;
+            // background-position: left 0;
+            height: 65rem;
+        } 
+    }    
+}

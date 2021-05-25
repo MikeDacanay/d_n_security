@@ -1,0 +1,58 @@
+@import '../../shared/variables.scss';
+
+.Footer {
+    &__wrapper{
+        position: fixed;
+        width: 50vw;
+        bottom: 0;
+        height: 2.4rem;
+        right: 0;
+    
+        @include bp(1024){
+            width: 100vw;
+        }
+
+        &--1{
+            @include bp(550){
+                display: none;
+            }
+        }
+
+        &--2{
+            display: none;
+            @include bp(550){
+                display: block;
+            }
+        }
+    }
+    &__content{
+        width: 100%;
+        margin-left: auto;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-4;
+
+        & > * {
+            font-family: $font-reg;
+            font-size: 0.55rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            
+            &:not(:last-child){
+                margin-right: 0.75rem;
+            }        
+        }        
+    }
+    &__line {
+        border-left: 1px solid rgba(255, 255, 255, 0.6);
+        height: 0.7rem;
+    }
+    &__link{
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}       

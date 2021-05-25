@@ -1,0 +1,15 @@
+@import '../../shared/variables.scss';
+
+.Answers{
+    margin-top: 1.4rem;
+
+    @include bp(768){
+        margin-top: 1.8rem;
+    }
+    @include bp(550){
+        margin-top: 1.056rem;
+    }
+    @include bp(360){
+        margin-top: 0.8rem;
+    }
+}

@@ -1,0 +1,66 @@
+@import '../../../shared/variables.scss';
+
+.Answer {
+    display: flex;
+
+    & > * {
+        cursor: pointer;        
+    }
+
+    &:not(:first-of-type){
+        margin-top: 1.2rem;
+
+        @include bp(768){
+            margin-top: 1.8rem;
+        }
+        @include bp(550){
+            margin-top: 0.792rem;
+        }
+    }
+
+    & > label {
+        font-family: $font-reg;
+        font-size: 0.69rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        color: $color-w;
+        // line-height: 1.16;
+        letter-spacing: normal;
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        @include bp(1024){
+            font-size: 1rem;
+        }
+        @include bp(550){
+            font-size: 0.7128rem;
+            line-height: 1.33;
+        }
+        @include bp(360){
+            font-size: 0.69rem;
+            line-height: 1.16;
+        }
+    }
+
+    & > input{
+        display: none;
+    }
+    &__radio{
+        &--faux{
+            height: 1.2rem;
+            flex: 0 0 1.2rem;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin-right: 1rem;
+            // background-color: yellow;
+            background-image: url('./assets/radio--1.png');
+
+            .Answer__radio:checked ~ .Answer__label & {
+                // background: red;
+                background-image: url('./assets/radio--2.svg');
+            }
+        }
+    }
+}

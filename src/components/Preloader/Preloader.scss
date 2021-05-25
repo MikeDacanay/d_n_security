@@ -1,0 +1,32 @@
+@import '../../shared//variables.scss';
+
+.Preload{
+	background: $color-w;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    transition: opacity 1s;
+    z-index: 100000 ;
+    position: fixed;
+	&.fade{
+		opacity: 0;
+		z-index: -1000000000;
+	}
+	&.hide{
+		display: none;
+	}
+}
+
+#Preload{
+	&__container{
+		height: 25vw;
+		width: 25vw;
+		position: relative;
+		& > * {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

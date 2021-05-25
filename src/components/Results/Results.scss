@@ -1,0 +1,128 @@
+@import '../../shared/variables.scss';
+
+.Results{
+    &__subtitle{
+        font-family: $font-b1;
+        font-size: 0.6rem;
+        font-stretch: normal;
+        font-style: normal;
+        // line-height: 0.87;
+        letter-spacing: 0.05rem;
+        color: $color-6;
+
+        &--1{
+            @include bp(1024){
+                display: block;                
+                text-align: left;
+                color: $color-2;
+                font-size: 0.8rem;
+            }
+            // @include bp()
+        }
+        &--2{
+            @include bp(1024){
+                padding-left: 3rem;
+                margin-top: 3.55rem;
+                font-size: 1rem;
+            }
+            @include bp(768){
+                margin-top: 2.4rem;
+                font-size: 0.9rem;
+                padding-left: 0rem;
+            }
+            // @include bp(550){
+            //     padding-left: 1.5rem;
+            // }
+            text-transform: uppercase;
+        }
+    }
+
+    &__title{
+        margin-top: 0.1rem;
+        font-family: $font-gg;
+        font-size: 1.8rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        // line-height: 1.22;
+        letter-spacing: normal;
+        color: $color-w;
+
+        @include bp(1440){
+            font-size: 1.2rem;
+        }
+        &--1{
+            @include bp(1024){
+                display: block;
+                font-size: 1.8rem;
+                margin-top: 0.65rem;
+            }
+            @include bp(550){
+                font-size: 1.188rem;
+            }
+        }
+        &--2{
+            @include bp(1024){
+                display: none;
+            }
+        }
+    }
+    &__points{
+        margin-top: 1.15rem;
+
+        @include bp(1440){
+            margin-top: 0.65rem;
+        }
+        @include bp(1200){
+            margin-top: .6rem;
+        }
+        @include bp(1024){
+            padding-left: 3rem;
+        }
+        @include bp(768){
+            margin-top: 1.75rem;
+            padding-left: 0;
+        }
+        // @include bp(550){
+        //     padding-left: 1.5rem;
+        // }
+    }    
+    &__spider{
+        &--wrapper{
+            display: none;
+            @include bp(1024){
+                display: block;
+                padding-left: 3rem;
+                position: relative;
+                padding-bottom: 3.75rem;
+            }            
+            @include bp(768){
+                padding-left: 0;
+                padding-right: 0;
+            }
+            // @include bp(550){
+            //     padding-left: 1.5rem;
+            // }
+            &::before{
+                content: '';
+                height: calc(#{100%} + #{1.5rem});
+                background: $color-4;
+                // width: 100vw;
+                width: calc(100% + 1.6rem);
+                display: block;
+                position: absolute;
+                z-index: -1;
+                left: 0rem;
+                transform: translateY(-1.5rem);
+
+                @include bp(768){
+                    width: calc(#{100%} + #{1.5rem});
+                    margin-left: -.75rem;
+                }
+                // @include bp(550){
+                //     width: calc(#{100%} + #{1.5rem});
+                // }
+            }
+        }
+    }
+}

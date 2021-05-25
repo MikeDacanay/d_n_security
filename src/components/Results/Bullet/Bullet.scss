@@ -1,0 +1,155 @@
+@import '../../../shared/variables.scss';
+
+$radio-width-1: 1.1rem;
+$radio-width-2: 1.45rem;
+$radio-width-3: 0.957rem;
+
+$radio-mr-1: 0.35rem;
+$radio-mr-2: 0.75rem;
+$radio-mr-3: 0.495rem;
+
+.Bullet {
+    &:not(:last-of-type){
+        margin-bottom: 21px;
+        
+        @include bp(1440){
+            margin-bottom: 0.65rem;
+        }
+        @include bp(1200){
+            margin-bottom: 0.5rem;
+        }
+    }
+    &__header{
+        display: flex;
+        align-items: center;        
+        text-transform: uppercase;
+
+    }
+    &__radio{
+        width: $radio-width-1;
+        height: $radio-width-1;
+        margin-right: $radio-mr-1;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @include bp(1024){
+            width: $radio-width-2;
+            height: $radio-width-2;
+            margin-right: $radio-mr-2;
+        }
+
+        @include bp(550){
+            width: $radio-width-3;
+            height: $radio-width-3;
+            margin-right: $radio-mr-3;
+        }
+
+        .Bullet--1 &{
+            background-image: url(./assets/checkmark.svg);
+        }
+        .Bullet--2 &{
+            background-image: url(./assets/radio--2.svg);
+        }
+    }
+    &__title{
+        // margin: 4px 0 0 7px;
+        font-family: $font-b1;
+        font-size: 0.75rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: $color-2;
+
+        .Bullet--1 & {
+            color: $color-w;
+        }
+
+        @include bp(1200){
+            font-size: .7rem;
+        }
+        @include bp(1024){
+            font-size: 1.2rem;
+        }
+        @include bp(768){
+            font-size: 1.1rem;
+        }
+        @include bp(550){
+            font-size: 0.726rem;
+        }
+    }
+    &__copy{
+        padding-left: calc(#{$radio-width-1} + #{$radio-mr-1});
+        display: flex;
+        flex-direction: column;
+
+        @include bp(1024){
+            padding-left: calc(#{$radio-width-2} + #{$radio-mr-2});
+        }
+        @include bp(550){
+            padding-left: calc(#{$radio-width-3} + #{$radio-mr-3});
+        }
+
+        .Bullet--1 & {
+            display: none;
+        }
+
+        &--main{
+            font-family: $font-reg;
+            font-size: 0.6rem;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: rgba(255, 255, 255, 0.6);
+            @include bp(1200){
+                font-size: 0.55rem;
+            }
+            @include bp(1024){
+                font-size: 1rem;
+                margin-top: 0.4rem;
+            }
+            @include bp(550){
+                font-size: .66rem;
+            }
+        }
+        &--sub{
+            font-family: $font-b;
+            font-size: 0.6rem;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: $color-w;
+            text-decoration: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            margin-top: 0.25rem;
+            
+            &:hover > span{
+                text-decoration: underline;
+            }
+            &::after{
+                font-family: $font-i1;
+                content: '\f24e';
+                margin-left: 0.25rem;
+                text-decoration: none;
+                // &:hover{
+                //     text-decoration: none;
+                // }
+            }
+            @include bp(1200){
+                font-size: 0.55rem;
+            }
+            @include bp(1024){
+                font-size: 1rem;
+            }
+            @include bp(550){
+                font-size: .66rem;
+            }
+        }
+    }
+}

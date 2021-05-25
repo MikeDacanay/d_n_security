@@ -1,0 +1,140 @@
+@import '../../../shared/variables.scss';
+
+.Nav1{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    @include bp(550){
+        margin: 0 auto;
+    }
+
+    &--1{
+        margin-top: 4rem;
+        opacity: .3;
+        pointer-events: none;
+        margin-bottom: 0.75rem;
+        @include bp(1024){
+            margin-top: 3.8rem;
+        }
+        @include bp(768){
+            margin-top: 1.8rem;
+        }
+        @include bp(550){
+            margin-top: 1.4rem;
+            margin-bottom: 6.5rem;
+        }
+    }
+    &--2{
+        // transform: translateX(-50%);
+        margin: 0 auto;
+        margin-top: 1.6rem;
+        
+        // left: -3.625rem;
+        
+        @include bp(768){
+            // left: -2.625rem;
+            // margin-top: 2rem;
+            margin-top: 1.25rem;
+        }
+
+        // @include bp(1200){
+        //     left: -2.1rem;
+        // }
+        @include bp(360){
+            margin-top: 1.85rem;
+        }
+    }
+    &--3{
+        // transform: translateX(-50%);
+        margin: 0 auto;        
+        pointer-events: none;
+        opacity: .3;
+        // left: -3.625rem;
+        
+        // @include bp(1440){
+        //     left: -2.625rem;
+        // }
+
+        // @include bp(1200){
+        //     left: -2.1rem;
+        // }
+        // @include bp(550){
+        //     left: -0.6rem;
+        // }
+        margin-top: 1.75rem;
+
+        @include bp(1200){
+            @include bph(750){                
+                margin-top: 1rem;
+            }
+        }
+        @include bp(1024){
+            margin-top: 3.8rem;
+        }
+        @include bp(768){
+            margin-top: 1.8rem;
+            margin-bottom: 7.5rem;
+        }
+        @include bp(550){
+            margin-top: 1.4rem;
+        }        
+        @include bp(360){
+            margin-top: 1.4rem;
+        }
+
+    }
+
+    &__text{
+        // margin-top: 4rem;
+        // @include bp(1024){
+        //     margin-top: 3.8rem;
+        // }
+        // @include bp(768){
+        //     margin-top: 1.8rem;
+        // }
+        // @include bp(550){
+        //     margin-top: 1.4rem;
+        // }
+
+        // @include bp(360){
+        //     display: none;
+        // }
+        @include nav1_txt;
+    }
+
+    &__arrow{
+        width: .6rem;
+        height: .6rem;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        &--up{
+            // opacity: .6;
+            background-image: url('./assets/chevy-3.svg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            transition: background-image 500ms;
+
+            &:hover{
+                background-image: url('./assets/chevy-4.svg');
+                // opacity: 1;
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+        }
+        &--down{
+            // margin-top: ;
+            background-image: url('./assets/chevy-2.svg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            transition: all 500ms;
+
+            .Nav1--3:hover &, 
+            .Nav1--1:hover &,{                
+                transform: translateY(.5rem);
+            }            
+        }
+    }
+}

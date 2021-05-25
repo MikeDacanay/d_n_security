@@ -1,0 +1,17 @@
+.Modal {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.85098);
+    opacity: 0;
+    transition: opacity 400ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    &__show{
+        z-index: 9999999;
+        opacity: 1;
+        z-index: 11;
+    }
+}

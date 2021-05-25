@@ -1,0 +1,211 @@
+@import '../../../shared/variables.scss';
+
+.Header{
+    position: fixed;
+    // min-width: 96rem;
+    width: 100%;
+    height: $spacer_top;
+    z-index: 10;
+    // background-color: $color-1;
+
+    &__strip{
+        width: 100%;
+        min-width: 96rem;
+        // background: orange;
+        height: 0.4rem;
+        background-image: url('./assets/strip-java.png');
+    }
+    &__wrapper{
+        width: 50vw;
+        left: 0;
+        right: 0;
+        // margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        padding: 0 3rem;
+        padding-right: 2.6rem;  
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include bp(1440){            
+            padding-right: 1.6rem;
+        }
+        @include bp(1200){
+            padding: 0 1.5rem;
+            padding-right: 1.2rem;
+        }
+        @include bp(1024){
+            padding-left: 3rem;
+            width: 100%;
+        }
+        @include bp(768){
+            // padding-left: 2.6rem;
+            padding-left: 0.75rem;
+            padding-right: .75rem;
+        }
+        // @include bp(550){
+        //     padding-left: 1.25rem;
+        // }
+        // @include bp(360){
+        //     padding-left: 1.2rem;
+        // }
+    }
+    &__logo{
+        flex: 0 0 7.75rem;
+        height: 1rem;
+        // background-color: aqua;
+        background-image: url('./assets/oracle-logo.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        
+        @include bp(550){
+            flex: 0 0 6.85rem;
+            height: 0.9rem;
+        }
+        @include bp(360){
+            flex: 0 0 5.45rem;
+            height: 0.7rem;
+        }
+    }
+
+    &__restart{
+        width: auto;
+        text-decoration: none;
+        height: 1.8rem;
+        // margin: 0 0 0 561.0.4rem;
+        // padding: 0.4rem 0.8rem;
+        border-radius: 0.2rem;
+        border: solid 0.05rem rgba(255, 255, 255, 0.3);
+        display: flex;
+        padding: 0 0.8rem;
+        align-items: center;
+        justify-content: space-between;
+        // opacity: 0;
+        // pointer-events: none;
+        cursor: pointer;
+
+        & > * {
+            transition: all .5s;
+        }
+        
+        &:hover{
+            background: $color-w;    
+        }
+
+        &--img{
+            width: 1rem;
+            height: 1rem;
+            background: url('./assets/ico-Restart.svg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin-right: 0.4rem;
+
+            .Header__restart:hover &{
+                background: url('./assets/ico-Restart--2.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+        }
+        &--txt{
+            font-family: $font-reg;
+            font-size: 0.69rem;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            // line-height: 1.16;
+            letter-spacing: normal;
+            text-align: center;
+            color: $color-w;
+
+            .Header__restart:hover &{
+                color: $color-1;
+            }
+        }        
+    }
+
+    &__language{
+        width: auto;
+        text-decoration: none;
+        height: 1.8rem;
+        border-radius: 0.2rem;
+        border: solid 0.05rem rgba(255, 255, 255, 0.3);
+        display: flex;
+        padding: 0 0.8rem;
+        align-items: center;
+        justify-content: space-between;
+        opacity: 1;
+        color: $color-w;
+        background: transparent;
+        cursor: pointer;
+        background: url('./assets/ico-lang.svg');
+        background-repeat: no-repeat;
+        background-size: 1rem 1rem;
+        background-position-y: center;
+        background-position-x: .8rem;
+        text-indent: 1.45rem;
+        font-family: $font-reg;
+       
+        @include bp(550){
+            padding: 0 .4rem;
+        }
+
+        &--1{
+            width: 5.5rem;
+            height: 1.9rem;
+        }
+
+        
+
+        & > option{
+            font-family: $font-reg;
+            font-size: 0.69rem;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            // line-height: 1.16;
+            letter-spacing: normal;
+            text-align: center;
+            color: #000;
+
+            padding-left: .8rem;
+
+            .Header__restart:hover &{
+                color: $color-1;
+            }
+        }        
+    }
+
+    &::after{
+        content: '';
+        background-color: $color-1;
+        width: 50vw;
+        height: 4rem;
+        display: block;
+        position: absolute;
+        z-index: -10;
+        transition: background-color .5s;
+
+        @include bp(1024){
+            width: 100vw;
+            // background-color: $color-4;
+        }
+        @include bp(768){
+            height: 3.65rem;
+        }
+    }
+
+    &--1{
+        &::after{
+            background-color: $color-1;
+            @include bp(1024){
+                background-color: $color-4;
+            }
+        }       
+    }
+}
+
+@-moz-document url-prefix() {
+    .Header__language--1 {
+        text-indent: 0.725rem;
+    }
+}

@@ -1,0 +1,17 @@
+@import '../../shared/variables.scss';
+
+.Saleschat{
+    position: fixed;
+    right: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    // background: red;
+    background-size: 100%;
+    background-image: url('./assets/saleschat.svg');
+    z-index: 100000;
+    @include bp(768){        
+        top: 89%;
+    }
+}

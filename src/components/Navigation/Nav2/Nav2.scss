@@ -1,0 +1,106 @@
+@import '../../../shared//variables.scss'; 
+
+.Nav2{
+    &__wrapper{    
+        max-width: 96rem;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        padding-top: $spacer-top;
+        padding-left: 3rem;
+        z-index: -5;
+        // background: red;
+        transform: translateY(100vh);
+        @include bp(1200){
+            padding: 0 1.5rem;
+        }
+        @include bp(1024){
+            padding-left: 3rem;
+            // z-index: 1000;
+            // display: none;
+        }
+        @include bp(768){
+            padding-left: .75rem;
+            padding: 0 .75rem;
+        }
+    }
+
+    &__items{
+        margin-top: 11.7rem;
+
+        @include bp(1024){
+            margin-top: 5.45rem;
+        }
+    }
+    &__item{
+        width: 2.65rem;
+        height: 0.8rem;        
+        margin-bottom: 0.75rem;      
+        display: flex;
+        align-items: center;
+        justify-content: space-between;  
+
+        @include bp(1024){
+            margin-left: auto;
+            margin-bottom: 0;
+            justify-content: flex-end;
+            width: auto;
+        }
+
+        &--line{            
+            height: 0.15rem;
+            margin-right: 0.35rem;
+            width: 0.8rem;
+            opacity: .6;
+            background-color: $color-5;
+            
+            @include bp(1024){
+                height: .115rem;
+                width: 0.6rem;
+                margin-right: 0;
+            }
+            @include bp(550){
+                margin-right: 0;
+            }
+
+            .Nav2__item-init &{                    
+                width: 1.6rem;
+                background-color: $color-2;
+                opacity: 1;
+
+                @include bp(1024){
+                    width: 1.2rem;
+                    height: 0.115rem;
+                }
+            }
+        }
+    
+        &--text{
+            font-family: $font-b;
+            font-size: 0.6rem;
+            opacity: 0;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-align: left;
+            color: $color-w;
+
+            @include bp(1024){
+                order: -1;
+                font-size: 0.8rem;
+                margin-right: 0.35rem;
+                opacity: 0;
+                display: none;
+            }
+
+            .Nav2__item-init & {                    
+                opacity: .6;
+        
+                @include bp(1024){
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

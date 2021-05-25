@@ -1,0 +1,31 @@
+@import '../../shared/variables.scss';
+
+.Question {
+    margin: 0.65rem 0 0;
+    font-family: $font-gg;
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: left;
+    color: $color-w;
+    width: 90%;
+    @include bp(1200){
+        margin-top: 0.429rem;
+        font-size: 1.26rem;
+    }
+
+    @include bp(1024){
+        font-size: 2rem;
+        width: 90%;
+    }
+    @include bp(550){
+        font-size: 1.056rem;
+    }
+    @include bp(360){
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+}
