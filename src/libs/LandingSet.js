@@ -1,6 +1,6 @@
 const LandingSet = {
     title1: {
-        English: "How robust is my",
+        English: "Oracle Online",
         German: 'Selbstbewertungstool',
         French: 'Outil d’auto-évaluation',
         Russian: 'Инструмент для самостоятельной',
@@ -11,7 +11,7 @@ const LandingSet = {
         SpanishLAD: 'Herramienta de autoevaluación',
     },
     title2: {
-        English: "Java environment?",
+        English: "Security Assessment",
         German: 'für das Finanzwesen',
         French: "financière",
         Russian: "оценки финансовых процессов",
@@ -22,7 +22,7 @@ const LandingSet = {
         SpanishLAD: "financiera",
     },
     landingCopy: {
-        English: "This quick check up can help identify the gaps and improve your health.",
+        English: "Understanding the risk posture of your organization",
         German: "Erfahren Sie, wie Ihre Finanzprozesse im Vergleich zu denen erstklassiger Unternehmen dastehen.",
         French: "Comparez vos processus financiers à ceux des entreprises leader de leur secteur.",
         Russian: "Узнайте, насколько эффективно построены ваши финансовые процессы по сравнению с лучшими в своем классе организациями.",

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { gsap } from "gsap";
 import $ from 'jquery';
 import CSSRulePlugin from "gsap/CSSRulePlugin";
-import RoleOptions from '../../components/RoleOptions/RoleOptions';
+// import RoleOptions from '../../components/RoleOptions/RoleOptions';
 import Nav1 from '../../components/Navigation/Nav1/Nav1';
 import Results from '../../components/Results/Results';
 import HEADER_MOD from '../../libs/Models/Modellibs/HeaderMod';
@@ -143,10 +143,10 @@ const Panels = props => {
                 <div className="Landing__text">
                     {LandingSet.landingCopy[props.currentLang]}
                 </div>    
-                <RoleOptions
+                {/* <RoleOptions
                     changed={changeRoleHandlr}
                     roles={props.EXISTING_ROLES}
-                />
+                /> */}
                 <Nav1
                     text={LandingSet.getStarted[props.currentLang]}
                     type={0}
