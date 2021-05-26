@@ -1308,5 +1308,48 @@ const HEADER_MOD = {
         negLink:"https://test.com",
         negLinkTxt:"Lorem Ipsum",    
     },
+
+    "To the best of your knowledge, which of the following types of cloud services are in use at your organization? (regardless if those services are sanctioned by the IT department)": {
+        header: "Stability, predictability",
+        negCopy: "Lorem Ipsum",
+        negLink:"https://www.oracle.com",
+        negLinkTxt:"Learn how to get started",   
+    },
+    "To the best of your knowledge, approximately what percent of your company's data resides in any public cloud (e.g. SaaS, PaaS or IaaS)?": {
+        header: "Stability, predictability",
+        negCopy: "Lorem Ipsum",
+        negLink:"https://www.oracle.com",
+        negLinkTxt:"Learn how to get started",   
+    },
+    "How would you characterize the impact of ransomware to your business?": {
+        header: "Stability, predictability",
+        negCopy: "Lorem Ipsum",
+        negLink:"https://www.oracle.com",
+        negLinkTxt:"Learn how to get started",   
+    },
+    "Do you feel your organization has a readiness gap created by its current cloud use and rate of expansion and the maturity of its cloud security program?": {
+        header: "Service Providers",
+        negCopy: "Lorem Ipsum",
+        negLink:"https://www.oracle.com",
+        negLinkTxt:"Learn how to get started",   
+    },
+    "For which of the following types of cloud services do you find the shared responsibility security model the most confusing?": {
+        header: "Service Providers",
+        negCopy: "Lorem Ipsum",
+        negLink:"https://www.oracle.com",
+        negLinkTxt:"Learn how to get started",   
+    },
+    "What/who do you trust more to keep something confidential/private?": {
+        header: "Service Providers",
+        negCopy: "Lorem Ipsum",
+        negLink:"https://www.oracle.com",
+        negLinkTxt:"Learn how to get started",   
+    },
+    "How have any service provider compromises impacted your business?": {
+        header: "Service Providers",
+        negCopy: "Lorem Ipsum",
+        negLink:"https://www.oracle.com",
+        negLinkTxt:"Learn how to get started",   
+    },
 }
 export default HEADER_MOD;

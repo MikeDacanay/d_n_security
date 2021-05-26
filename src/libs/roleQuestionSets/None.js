@@ -3,7 +3,7 @@ import MultChoiceObj from '../Models/QTypes/MultChoiceObj';
 const CFOQuestionSet = [    
     new MultChoiceObj({
         questionSet:{
-            English: 'How do you perform scenario modeling and long-range plans?',
+            English: 'To the best of your knowledge, which of the following types of cloud services are in use at your organization? (regardless if those services are sanctioned by the IT department)',
             German: 'Wie führen Sie Szenariomodellierung und langfristige Pläne durch?',
             French: "Êtes-vous en mesure de modéliser des scénarios et de planifier à long terme ?",
             Russian: "Как осуществляется сценарное моделирование и долгосрочное планирование в компании?",
@@ -15,16 +15,15 @@ const CFOQuestionSet = [
         },
         answerSet:{
             English: [
-                'No formal scenario modeling or long range planning. Planning and budgeting done yearly.',
-                'Scenario modeling done mainly in Excel, with little or no input from business units.',
-                'Scenario modeling and long-range planning done outside traditional planning system.',
-                'Scenario modeling and long-range planning capabilities integrated with financial and operational plans.',
+                'Infrastructure-as-a-service (IaaS)',
+                'Software-as-a-service (SaaS)',
+                'Platform-as-a-service (PaaS)',            
             ],
             German: [
                 'Es gibt keine formelle Szenariomodellierung oder langfristige Prognosen. Planung und Finanzplanung erfolgen jährlich.',
                 'Szenariomodellierung überwiegend in Excel, mit wenigen oder keinen Angaben von den Geschäftsbereichen.',
                 'Szenariomodellierung und langfristige Prognosen erfolgen außerhalb des traditionellen Planungssystems.',
-                'Funktionen für Szenariomodellierung und langfristige Prognose sind in Finanz- und Betriebspläne integriert.', 
+                'Funktionen für Szenariomodellierung und langfristige Prognose sind in Finanzund Betriebspläne integriert.', 
             ],
             French: [
                 'Aucun processus formel de modélisation de scénarios et de planification à long terme. Nous le faisons une fois par an.',
@@ -72,7 +71,7 @@ const CFOQuestionSet = [
     }),
     new MultChoiceObj({
         questionSet:{
-            English: 'How do you adapt to new business models?',
+            English: "To the best of your knowledge, approximately what percent of your company's data resides in any public cloud (e.g. SaaS, PaaS or IaaS)?",
             German: 'Wie passen Sie sich an neue Geschäftsmodelle an?',
             French: "Comment vous adaptez-vous aux nouveaux business models ?",
             Russian: "Как ваша компания адаптируется к новым бизнес-моделям?",
@@ -84,10 +83,12 @@ const CFOQuestionSet = [
         },
         answerSet:{
             English: [
-                'No defined process. Our systems can’t quickly adapt to changes to current business model.',
-                'Process partly defined but informal. Systems would need extensive customizations to adapt.',
-                'Partly integrated process. Systems partly integrated but cobbled together and customized.',
-                'Fully integrated systems, process. We can pivot business models and get to market quickly.',
+                '0% of data - no public cloud-resident data',
+                '1% to 10% of data',
+                '11% to 25% of data',
+                '26% to 50% of data',
+                '51% to 75% of data',
+                'More than 75% of data',
             ],
             German: [
                 'Kein festgelegter Prozess. Unsere Systeme können sich nicht schnell an Änderungen des derzeitigen Geschäftsmodells anpassen.',
@@ -141,7 +142,7 @@ const CFOQuestionSet = [
     }),
     new MultChoiceObj({
         questionSet:{
-            English: 'What is your evaluation process for M&A and divestitures?',
+            English: 'How would you characterize the impact of ransomware to your business?',
             German: 'Wie werden Fusionen, Übernahmen sowie Veräußerungen evaluiert?',
             French: "Comment évaluez-vous les fusions et acquisitions et les cessions ?",
             Russian: "Как вы оцениваете влияние процессов слияния и поглощения, а также продажи активов?",
@@ -153,10 +154,10 @@ const CFOQuestionSet = [
         },
         answerSet:{
             English: [
-                'We evaluate acquisitions separate from strategic goals and impacts on existing business.',
-                'We follow a selective plan, generating and managing multiple versions of M&A plans.',
-                'Use a strategic planning system to create and compare many scenarios and evaluate business impact.',
-                'We programmatically analyze impact on debt ratio, cash flow, stock price and other KPIs.',
+                'Caused massive disruption and data was never recovered',
+                'Caused large disruption but data was restored after negotiations with attacker',
+                'Caused minimal disruption and only impacted low level systems which we wrote off',
+                'We have not been impacted by ransomware in last 12 months',
             ],
             German: [   
                 'Wir evaluieren Übernahmen getrennt von strategischen Zielen und Auswirkungen auf den bestehenden Geschäftsbetrieb.',
@@ -210,7 +211,7 @@ const CFOQuestionSet = [
     }),
     new MultChoiceObj({
         questionSet:{
-            English: 'How connected is your budgeting and planning process?',
+            English: 'How have any service provider compromises impacted your business?',
             German: 'Wie zusammenhängend ist Ihr Finanzplanungs- und Planungsprozess?',
             French: "Le processus de budgétisation et de planification est-il connecté ?",
             Russian: "Насколько взаимосвязаны процессы бюджетирования и планирования в вашей компании?",
@@ -222,10 +223,10 @@ const CFOQuestionSet = [
         },
         answerSet:{
             English: [
-                'Finance drives the overall planning process with little input from lines of business.',
-                'We send budget spreadsheets to lines of business to input assumptions and numbers.',
-                'Each LOB manages their own budget and plan, sending high-level data to finance.',
-                'Planning process connected across finance and LOBs. Best practices built into systems.',
+                'Yes, and this has had an impact on our own ability to serve our customers.',
+                'Yes, and this has had an impact on our reputation.',
+                'Yes, and this has had a financial impact to our bottom line.',
+                'Yes, and this has impacted our ability to trust our vendors and providers e. No, we are not aware of any compromises with our trusted vendors and service providers.',
             ],
            German: [
                 'Das Finanzwesen treibt den gesamten Planungsprozess mit wenig Angaben von den Geschäftsbereichen.',
@@ -280,7 +281,7 @@ const CFOQuestionSet = [
     }),
     new MultChoiceObj({
         questionSet:{
-            English: 'How do you measure which products or services are profitable?',
+            English: 'Do you feel your organization has a readiness gap created by its current cloud use and rate of expansion and the maturity of its cloud security program?',
             German: 'Wie messen Sie, welche Produkte oder Services rentabel sind?',        
             French: "Comment évaluez-vous la rentabilité des produits et services ?",
             Russian: "Как вы оцениваете, какие продукты или услуги являются прибыльными?",
@@ -292,10 +293,9 @@ const CFOQuestionSet = [
         },
         answerSet:{
             English: [
-                'We don’t currently have the ability to do this at a detailed level.',
-                'We rely on standard reporting to track costs and profitability at a high level.',
-                'We use GL to allocate costs, but can’t easily model costs of new initiatives.',
-                'We use a purpose-built profitability and cost management tool.',
+                'Yes, we have a wide public cloud security readiness gap',
+                'Yes, we have a moderate public cloud security readiness gap',
+                'No, we are well prepared to secure our use of public cloud services',
             ],
             German: [
                 'Wir können das derzeit nicht mit hohem Detailgrad tun.',
@@ -349,7 +349,7 @@ const CFOQuestionSet = [
     }),
     new MultChoiceObj({
         questionSet:{
-            English: 'Which describes your audit, risk and compliance processes?',
+            English: 'For which of the following types of cloud services do you find the shared responsibility security model the most confusing?',
             German: 'Wie würden Sie Ihre Prüf-, Risiko- und Compliance-Prozesse beschreiben?',
             French: "Décrivez vos processus d’audit, de gestion des risques et de conformité.",
             Russian: "Охарактеризуйте процессы аудита компании, управления рисками и соответствием?",
@@ -361,10 +361,11 @@ const CFOQuestionSet = [
         },
         answerSet:{
             English: [
-                'Siloed processes, outdated tools, manual controls and processes, limited collaboration.',
-                'Semi-connected processes, bolt-on solutions with data extracts, offline analytics.',
-                'Integrated risk processes & tools, limited control automation, efficient collaboration.',
-                'ERP-embedded risk processes & tools, highly automated controls, advanced data science.',
+                "We have strict protocols in place to stay current with all software compliance matters",
+                "We rely on third parties to manage our software compliance",
+                "We balance costs against comliance concerns and act accordingly",
+                "We have basic measures in place",
+                "We have little to no compliance measures in place",
             ],
             German: [
                 'Isolierte Prozesse, veraltete Tools, manuelle Kontrollen und Prozesse, eingeschränkte Zusammenarbeit.',
@@ -409,7 +410,76 @@ const CFOQuestionSet = [
                 'Processos e ferramentas de risco incorporados ao ERP, controles altamente automatizados, ciência de dados avançada.',
             ],
             SpanishLAD: [
-                'Procesos no integrados, herramientas obsoletas, controles y procesos manuales, colaboración limitada.',
+                'Procesos estancados, herramientas obsoletas, controles y procesos manuales, colaboraciones limitadas.',
+                'Procesos semi-conectados, soluciones complementarias con extractos de datos, analítica offline.',
+                'Procesos y herramientas de riesgo integrados, automatización de control limitada, colaboración eficiente.',
+                'Procesos y herramientas de riesgo integrados en ERP, controles altamente automatizados, ciencia de datos avanzada.',
+            ]
+        },
+    }),
+    new MultChoiceObj({
+        questionSet:{
+            English: 'What/who do you trust more to keep something confidential/private?',
+            German: 'Wie würden Sie Ihre Prüf-, Risiko- und Compliance-Prozesse beschreiben?',
+            French: "Décrivez vos processus d’audit, de gestion des risques et de conformité.",
+            Russian: "Охарактеризуйте процессы аудита компании, управления рисками и соответствием?",
+            Turkish: "Denetim, risk ve uygunluk süreçlerinizi en iyi hangisi tanımlıyor?",
+            Italian: "Quale risposta descrive meglio i vostri processi di audit, rischio e conformità?",
+            Spanish: "¿Cómo describiría los procesos de auditoría, riesgo y cumplimiento?",
+            PortugueseBR: "Qual descreve os processos de auditoria, risco e conformidade?",
+            SpanishLAD: "¿Qué describe tus procesos de auditoría, riesgo y cumplimiento?",
+        },
+        answerSet:{
+            English: [
+                "My boss",
+                "My corporate laptop",
+                "My company's business-critical cloud services", 
+                "My spouse/partner",
+            ],
+            German: [
+                'Isolierte Prozesse, veraltete Tools, manuelle Kontrollen und Prozesse, eingeschränkte Zusammenarbeit.',
+                'Halbzusammenhängende Prozesse, nachträglich hinzugefügte Lösungen mit Datenextraktion, Offline-Analysen.',
+                'Integrierte Risikoprozesse und -tools, eingeschränkte Kontrollautomatisierung, effiziente Zusammenarbeit.',
+                'In ERP integrierte Risikoprozesse und -tools, hochautomatisierte Kontrollen, moderne Datenwissenschaft.',
+            ],
+            French: [
+                'Processus cloisonnés, outils obsolètes, contrôles et processus manuels, collaboration limitée.',
+                'Processus semi-connectés, solutions complémentaires avec extraction de données, analyses hors connexion.',
+                'Outils et processus de gestion des risques intégrés, contrôles automatisés limités, collaboration efficace.',
+                'Outils et processus de gestion des risques intégrés à l’ERP, contrôles ultra-automatisés, data science avancée.',
+            ],
+            Russian: [
+                'Обособленные процессы, устаревшие инструменты, ручное управление и процессы, ограниченное сотрудничество.',
+                'Процессы частично связаны между собой, готовые решения по извлечению данных, офлайн-аналитика.',
+                'Интегрированные процессы и инструменты управления рисками, ограниченная автоматизация контроля, эффективное сотрудничество.',
+                ' Встроенные в ERP-системы процессы управления рисками, автоматизированный контроль, глубинный анализ и обработка данных.',
+            ],
+            Turkish: [
+                'Birbirinden kopuk süreçler, modası geçmiş araçlar, manuel kontroller ve süreçler, sınırlı iş birliği.',
+                'Yarı bağlantılı süreçler, veri çıkarımlı, kolay uygulanır çözümler, çevrimdışı analizler.',
+                'Entegre risk süreçleri ve araçları, sınırlı kontrol otomasyonu, etkili iş birliği.',
+                'ERP entegreli risk süreçleri ve araçları, oldukça otomatik kontroller, gelişmiş veri bilimi.',
+            ],
+             Italian: [
+                'Sono processi in silos, caratterizzati da strumenti obsoleti, controlli e operazioni manuali, con collaborazione limitata.',
+                'Sono processi semi-connessi, caratterizzati da soluzioni custom con estratti di dati e analisi offline.',
+                'Sono processi e strumenti di rischio integrati, con un\'automazione del controllo limitata e una collaborazione efficiente.',
+                'Sono processi e strumenti di rischio integrati nell\'ERP, dai controlli altamente automatizzati e data science avanzata.',
+            ],
+            Spanish: [
+                'Procesos estancos, herramientas obsoletas, controles y procesos manuales, colaboraciones limitadas.',
+                'Procesos parcialmente conectados, soluciones aferradas a las extracciones de datos, análisis offline.',
+                'Procesos y herramientas de riesgo integrados, automatización del control limitada, colaboración eficaz.',
+                'Procesos y herramientas de riesgo integrados en ERP, controles altamente automatizados, ciencia de datos avanzada.',
+            ],
+            PortugueseBR: [
+                'Processos em silos, ferramentas desatualizadas, controles e processos manuais, colaboração limitada.',
+                'Processos semiconectados, soluções bolt-on com extratos de dados, análise offline.',
+                'Processos e ferramentas de risco integrados, automação de controle limitada, colaboração eficiente.',
+                'Processos e ferramentas de risco incorporados ao ERP, controles altamente automatizados, ciência de dados avançada.',
+            ],
+            SpanishLAD: [
+                'Procesos estancados, herramientas obsoletas, controles y procesos manuales, colaboraciones limitadas.',
                 'Procesos semi-conectados, soluciones complementarias con extractos de datos, analítica offline.',
                 'Procesos y herramientas de riesgo integrados, automatización de control limitada, colaboración eficiente.',
                 'Procesos y herramientas de riesgo integrados en ERP, controles altamente automatizados, ciencia de datos avanzada.',

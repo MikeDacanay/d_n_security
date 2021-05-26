@@ -49,7 +49,7 @@ const Panel = props => {
                                 type={props.pnl.type}
                                 answers={props.pnl.currA}
                                 pnlIdx={props.pnlIdx}
-                                dirDown={true}
+                                // dirDown={true}
                             />                                                    
                         </div>
                         <Nav1

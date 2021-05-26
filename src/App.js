@@ -12,6 +12,7 @@ import Nav2 from './components/Navigation/Nav2/Nav2';
 import Footer from './components/Footer/Footer';
 import Gate from './components/Gate/Gate';
 import Gate1 from './components/Gate/Gate1';
+import Gate2 from './components/Gate/Gate2';
 import Saleschat from './components/Saleschat/Saleschat';
 import SrcBox from './components/SrcBox/SrcBox';
 
@@ -33,6 +34,7 @@ const App = (props) => {
       {/* <Saleschat/> */}
       {/* <Gate/>
       <Gate1/>   */}
+      <Gate2/>
       <SrcBox/>
       <Header />
       <Main>

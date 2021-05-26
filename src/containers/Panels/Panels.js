@@ -126,6 +126,7 @@ const Panels = props => {
         question.currQ = question.questionSet[props.currentLang];
         question.currA = question.answerSet[props.currentLang];
         question.currH = HEADER_MOD[`${question.currQ}`].header;
+        console.log(question.currH);
         return question;
     });
 
