@@ -34,11 +34,12 @@
         &--2{
             display: flex;
             justify-content: flex-end;
+            position: relative;
         }
         &--4{
             $space-up: 3.1rem;
             // $space-up-neg: calc(#{-1} * #{$space-up});
-            background-color: $color-4;
+            background-color: $color-3;
             // transform: translateY($space-up-neg);
             height: calc(#{100%} + #{$space-up});
             @include bp(1024){
@@ -49,29 +50,53 @@
 
     &__img{
         &--1{
-            width: 21.6rem;
-            height: 23.25rem;
-            margin-left: 1.05rem;
-            margin-top: 1.35rem;
-            background-image: url('./assets/bg_texture--1.png');
+            bottom: 0;
+            width: 50vw;
+            height: 62vh;
+            background-repeat: no-repeat;
+            position: absolute;
+            background-size: cover;
+            background-image: url('./assets/bg_left_d.png');
+            // bottom: 0;
+            // width: 50vw;
+            // height: 62vh;
+            // background-image: url('./assets/bg_left_d.png');
+            // background-repeat: no-repeat;
+            // position: absolute;
+            // background-size: cover;
         }
         &--2{
             width: 65rem;
             background-position: right 0;
             height: 65rem;
-            background-image: url('./assets/bg_left_d.png');
+            background-image: url('./assets/bg_right_d.png');
             background-repeat: no-repeat;
+            position: absolute;
+            &-1{
+                background-image: url('./assets/landing-texture.png');
+                opacity: .36;
+                width: 50vw;
+            }
 
             @include bp(1024){
+            
                 // background-image: url('./assets/bg_left_d.png');
                 background-image: url('./assets/bg_full_m.png');
             }
         }
         &--3{
-            background-image: url('./assets/bg_texture_m.png');
-            width: 65rem;
-            // background-position: left 0;
+            // background-image: url('./assets/bg_texture_m.png');
+            // width: 65rem;
+            // // background-position: left 0;
+            // height: 65rem;
+            width: 50vw;
+            background-position: right 0;
             height: 65rem;
+            // background-image: url('./assets/bg_right_d.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            background-image: url('./assets/landing-texture.png');
+            opacity: .36;
         } 
     }    
 }

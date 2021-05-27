@@ -1,0 +1,55 @@
+// @import '../../../shared/variables.scss';
+@import '../../shared//variables.scss';
+.Socials {
+    // position: fixed;
+    padding-left: 1.45rem;
+    height: 1.5rem;
+    // width: 200px;
+    display: flex;
+    margin-top: 2.35rem;
+    align-items: center;
+    
+    &__text{
+        color: $color-w;
+        font-family: $font-reg;
+        font-size: .9rem;
+        font-weight: bold;
+        margin-right: 1.35rem;
+    }
+
+    &__icon{
+        background-size: cover;
+        background-repeat: none;
+        margin-right: 1.25rem;
+        // background-color: red;
+        flex: 0 0 1.05rem;
+        &:hover{
+            text-decoration: none;
+        }
+        
+        &--1{            
+            height: 0.85rem;
+            background-image: url('./assets/icon-email.svg');
+        }
+        &--2{
+            height: 1.05rem;
+            background-image: url('./assets/icon-facebook.svg');
+        }
+        &--3{            
+            height: 0.85rem;
+            background-image: url('./assets/icon-twitter.svg');
+        }
+        &--4{            
+            height: 1.05rem;
+            background-image: url('./assets/icon-linkedin.svg');
+        }
+    }
+}
+
+// .Social {
+//     &--1{
+//         height: 10px;
+//         width: 10px;
+//         background-color: red;
+//     }
+// }

@@ -1310,37 +1310,37 @@ const HEADER_MOD = {
     },
 
     "To the best of your knowledge, which of the following types of cloud services are in use at your organization? (regardless if those services are sanctioned by the IT department)": {
-        header: "Stability, predictability",
+        header: "Cloud Service Types",
         negCopy: "Lorem Ipsum",
         negLink:"https://www.oracle.com",
         negLinkTxt:"Learn how to get started",   
     },
     "To the best of your knowledge, approximately what percent of your company's data resides in any public cloud (e.g. SaaS, PaaS or IaaS)?": {
-        header: "Stability, predictability",
+        header: "Public Cloud Repository",
         negCopy: "Lorem Ipsum",
         negLink:"https://www.oracle.com",
         negLinkTxt:"Learn how to get started",   
     },
     "How would you characterize the impact of ransomware to your business?": {
-        header: "Stability, predictability",
+        header: "Data Breach",
         negCopy: "Lorem Ipsum",
         negLink:"https://www.oracle.com",
         negLinkTxt:"Learn how to get started",   
     },
     "Do you feel your organization has a readiness gap created by its current cloud use and rate of expansion and the maturity of its cloud security program?": {
-        header: "Service Providers",
+        header: "Readiness",
         negCopy: "Lorem Ipsum",
         negLink:"https://www.oracle.com",
         negLinkTxt:"Learn how to get started",   
     },
     "For which of the following types of cloud services do you find the shared responsibility security model the most confusing?": {
-        header: "Service Providers",
+        header: "Security",
         negCopy: "Lorem Ipsum",
         negLink:"https://www.oracle.com",
         negLinkTxt:"Learn how to get started",   
     },
     "What/who do you trust more to keep something confidential/private?": {
-        header: "Service Providers",
+        header: "Personal Confedentiality",
         negCopy: "Lorem Ipsum",
         negLink:"https://www.oracle.com",
         negLinkTxt:"Learn how to get started",   

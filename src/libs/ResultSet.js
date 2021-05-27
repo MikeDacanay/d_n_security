@@ -44,7 +44,7 @@ const ResultSet = {
         SpanishLAD: 'Aquí te presentamos algunas oportunidades para mejorar:'
     },
     btn1: {
-        English: 'Request a live Java assessment check',
+        English: 'Request demo',
         German: 'Oracle Cloud Demo anfordern',        
         French: 'Demander une démo d\'Oracle Cloud',
         Russian: 'Запросить демонстрацию Oracle Cloud ',
@@ -55,7 +55,7 @@ const ResultSet = {
         SpanishLAD: 'Solicite la demostración de Oracle Cloud '
     },
     btn2: {
-        English: 'Link to your personalized results',
+        English: 'Access my report',
         German: 'Link zu Ihrem Bericht',
         French: 'Lien vers votre rapport',
         Russian: 'Ссылка на ваш отчет ',

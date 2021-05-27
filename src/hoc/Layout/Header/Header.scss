@@ -144,6 +144,8 @@
         background-position-x: .8rem;
         text-indent: 1.45rem;
         font-family: $font-reg;
+        opacity: 0;
+        pointer-events: none;
        
         @include bp(550){
             padding: 0 .4rem;

@@ -19,42 +19,44 @@ const initialState = {
             SpanishLAD: 'Selecciona tu cargo'
         },
         {
-            English: 'CEO',
-            German: 'CFO',
-            French: 'Directeur financier et administratif',
-            Russian: 'Директор финансового департамента',
-            Turkish: 'CFO',
-            Italian: 'CFO',
-            Spanish: 'CFO',
-            PortugueseBR: 'CFO',
-            SpanishLAD: 'CFO'
+            English: 'Sr Cybersecurity Mgmt (e.g. CISO, CSO, VP/Dir of security)'
         },
         {
-            English: 'CIO / VP IT',
-            German: 'VP oder Direktor Finanzdienstsysteme ',
-            French: 'Vice-Président ou Responsable des systèmes financiers ',
-            Russian: 'Вице-президент или ИТ-директор по сопровождению фин. систем ',
-            Turkish: 'BY veya Finansal Sistemler Direktörü',
-            Italian: 'VP o Responsabile IT delle applicazioni per l\'area Finance (AFC)',
-            Spanish: 'VP o director de sistemas financieros',
-            PortugueseBR: 'Vice-presidente ou Diretor de sistemas financeiros',
-            SpanishLAD: 'Vicepresidente o Director de Sistemas Financieros '
+            English: 'Cloud Architec / Cloud Security Architect'
         },
         {
-            English: 'Java Developer',
-            German: 'Leitende Prüfer',
-            French: 'Directeur de l’audit interne',
-            Russian: 'Руководитель внутреннего аудита',
-            Turkish: 'Baş Denetçi',
-            Italian: 'Responsabile dell\'Internal Auditing, Risk Manager',
-            Spanish: 'Director ejecutivo de auditorías ',
-            PortugueseBR: 'Diretor executivo de auditoria ',
-            SpanishLAD: 'Director Ejecutivo de Auditoría '
+            English: 'Cybersecurity Operations Staff (SecOps, SOC)'
         },
         {
-            English: 'Java Operations'
+            English: 'Threat / Malware Response team'
         },
-
+        {
+            English: 'Sr IT Mgmt (e.g. CIO, VP/Dir of IT)'
+        },
+        {
+            English: 'IT Operations staff (e.g. admin, operators, support)'
+        },
+        {
+            English: 'Network Infrastructure and Operations'
+        },
+        {
+            English: 'Identity, Access and Entitlements mgmt/operations'
+        },
+        {
+            English: 'Cloud Infrastructure (IaaS, containers, virtualization)'
+        },
+        {
+            English: 'Application Security / Operations (PaaS/SaaS)'
+        },
+        {
+            English: 'Database Security (administration)'
+        },
+        {
+            English: 'Data Protection Officer / Data Privacy Officer'
+        },
+        {
+            English: 'IT Audit / Regulatory Compliance'
+        },
     ],
 }
 

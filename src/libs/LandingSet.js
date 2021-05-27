@@ -22,7 +22,7 @@ const LandingSet = {
         SpanishLAD: "financiera",
     },
     landingCopy: {
-        English: "Understanding the risk posture of your organization",
+        English: "Understanding the risk posture of your organization.",
         German: "Erfahren Sie, wie Ihre Finanzprozesse im Vergleich zu denen erstklassiger Unternehmen dastehen.",
         French: "Comparez vos processus financiers à ceux des entreprises leader de leur secteur.",
         Russian: "Узнайте, насколько эффективно построены ваши финансовые процессы по сравнению с лучшими в своем классе организациями.",

@@ -5,6 +5,7 @@ import Bullet from './Bullet/Bullet';
 import Buttons from './Buttons/Buttons';
 import SpiderClass from '../Spider/SpiderClass';
 import ResultSet from '../../libs/ResultSet';
+import Socials from '../Socials/Socials';
 
 import './Results.scss';
 
@@ -70,6 +71,7 @@ const Results = props => {
                 {bullets}
                 <Buttons
                 />
+                <Socials/>
             </div>
             
         </React.Fragment>

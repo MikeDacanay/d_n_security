@@ -184,13 +184,13 @@ export class SpiderClass extends Component {
       .transition()
       .duration(1000)
       .style('fill', (d, i) => {
-        if (this.props.currentQuestion < 7 && i === this.props.currentQuestion - 1) {
-          return '#f0cc71'
+        if (this.props.currentQuestion < 8 && i === this.props.currentQuestion - 1) {
+          return '#fff'
         }
-        if (this.props.currentQuestion === 7 && d.score < 100) {
-          return '#f0cc71'
+        if (this.props.currentQuestion === 8 && d.score < 100) {
+          return '#fff'
         }
-        return `#76a2a0`
+        return `#8b8580`
       })
 
     // Draws the labels
@@ -229,17 +229,17 @@ export class SpiderClass extends Component {
       .style('opacity', (d, i) => {
         if (this.props.currentQuestion === 7) { return 1 }
         if (this.props.currentQuestion - 1 === i) { return 1 }
-        if (i < this.props.currentQuestion - 1 || d.score !== 0) { return 0.6 }
-        // return 0.3
+        if (i < this.props.currentQuestion - 1 || d.score !== 0) { return 1 }
+        return 1
       })
       .style('fill', (d, i) => {
-        if (this.props.currentQuestion < 7 && i === this.props.currentQuestion - 1) {
-          return '#f0cc71'
+        if (this.props.currentQuestion < 8 && i === this.props.currentQuestion - 1) {
+          return '#fff'
         }
-        if (this.props.currentQuestion === 7 && d.score < 100) {
-          return '#f0cc71'
+        if (this.props.currentQuestion === 8 && d.score < 100) {
+          return '#fff'
         }
-        return `#fff`
+        return `#8b8580`
       })
       .style('font-size', () => {
         if (this.props.currentLang === 'Russian' && window.innerWidth <= 400) { return '12px' }

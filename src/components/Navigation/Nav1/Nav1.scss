@@ -12,20 +12,31 @@
     }
 
     &--1{
-        margin-top: 4rem;
-        opacity: .9;
-        // pointer-events: none;
+        // margin-top: 4rem;
+        opacity: .3;
+        margin-left: 1.8rem;
+        pointer-events: none;
         margin-bottom: 0.75rem;
-        @include bp(1024){
-            margin-top: 3.8rem;
-        }
+        width: 6.45rem;
+        height: 2.45rem;
+        background-color: $color-2;
+        border-radius: 0.15rem;
+        margin-top: 2.9rem;
+        justify-content: center;
         @include bp(768){
             margin-top: 1.8rem;
+            // width: 100%;
         }
-        @include bp(550){
-            margin-top: 1.4rem;
-            margin-bottom: 6.5rem;
-        }
+        // @include bp(1024){
+        //     margin-top: 3.8rem;
+        // }
+        // @include bp(768){
+        //     margin-top: 1.8rem;
+        // }
+        // @include bp(550){
+        //     margin-top: 1.4rem;
+        //     margin-bottom: 6.5rem;
+        // }
     }
     &--2{
         // transform: translateX(-50%);
@@ -103,6 +114,15 @@
         //     display: none;
         // }
         @include nav1_txt;
+        margin-bottom: 0px;
+        color: $color-3;
+        &--1{
+            color: $color-3;
+        }        
+
+        .Nav1--3 &{
+            color: $color-w;
+        }
     }
 
     &__arrow{
@@ -110,6 +130,7 @@
         height: .6rem;
         background-repeat: no-repeat;
         background-size: 100%;
+        // display: none;
         &--up{
             // opacity: .6;
             background-image: url('./assets/chevy-3.svg');
@@ -135,6 +156,13 @@
             .Nav1--1:hover &,{                
                 transform: translateY(.5rem);
             }            
+        }
+        &--remove{
+            display: none;
+        }
+
+        .Nav1--1 &{
+            display: none;
         }
     }
 }

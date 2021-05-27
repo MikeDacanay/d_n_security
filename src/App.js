@@ -108,7 +108,7 @@ const App = (props) => {
       </Main>
       <Background />
       <Nav2
-        questions={[...QuestionSets['CEO']]}
+        questions={[...QuestionSets['Choose your role']]}
       />
       <Footer />
       <Saleschat/>

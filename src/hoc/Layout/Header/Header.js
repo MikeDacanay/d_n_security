@@ -102,7 +102,8 @@ const Header = props => {
                             })}                
                         </select>
                         </form>
-                    ): (
+                    )
+                    : (
                         <a href={`http://${window.location.host}${window.location.pathname}?lang=${props.currentLang}`} className="Header__restart Header__btn">
                             <div className="Header__restart--img"></div>
                             <div className="Header__restart--txt">{LandingSet.restartBtn[props.currentLang]}</div>

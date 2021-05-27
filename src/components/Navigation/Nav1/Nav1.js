@@ -49,10 +49,19 @@ const Nav1 = props => {
                 duration: 1,
                 pointerEvents: 'auto',
             });
+            
+            gsap.to(".Footer__content", {
+                backgroundColor: '#161513',
+                duration: 1,
+            });
         }else if(props.retLnd){
             const num = 0; 
             setBgPosition(num);
 
+            gsap.to(".Footer__content", {
+                backgroundColor: '#3A3632',
+                duration: 1,
+            });
             gsap.to(".Header__restart", {
                 pointerEvents: 'none',
             })

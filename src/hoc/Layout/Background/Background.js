@@ -11,6 +11,7 @@ const Background = props => {
                 </div>
                 <div className="Background__section Background__section--2">
                     <div className="Background__img Background__img--2"></div>
+                    <div className="Background__img Background__img--2 Background__img--2-1"></div>
                 </div>
             </div>
             <div className="Background__wrapper Background__wrapper--2" id='Background__wrapper--2'>

@@ -4,29 +4,31 @@
     &__select{
         background-size: 20px 20px;
         background-repeat: no-repeat;
-        background-position: 92%;
-        margin-top: 2.9rem;
-        width: 22.9rem;
-        height: 2.6rem;
-        padding: 0.8rem 1.6rem;
+        background-position: 95%;
+        width: 14.85rem;
+        height: 2.45rem;
+        // padding: 0.8rem 1.6rem;
+        padding-left: 0.9rem;
+        box-sizing: border-box;
         border-radius: 0.2rem;
-        border: solid 0.05rem rgba(253, 241, 241, 0.3);
-        background-color: $color-w;
-        font-family: $font-reg;
-        font-size: 0.69rem;
-        font-weight: 600;
+        border: solid 0.05rem #fff;
+        background-color: transparent;
+        font-family: $font-b;
+        font-size: 0.9rem;
+        // font-weight: 600;
         font-stretch: normal;
         background-image: url('./assets/chevy_1.svg');
         font-style: normal;
         line-height: 1.16;
         letter-spacing: normal;
         text-align: left;
-        color: $color-3;   
+        color: #fff;   
         position: relative;
         cursor: pointer;
+        padding-right: 2.15rem;
         text-overflow: ellipsis;
-        padding-right: 3rem;
-        
+        // padding-right: 3rem;
+        margin-top: 2.9rem;
         @include bp(768){
             margin-top: 1.8rem;
             // width: 100%;
@@ -51,5 +53,14 @@
             color: $color-3;          
         }
         // }
+
+        & option{
+            background-color: $color-1;
+            color: #fff;
+        
+            &:hover {
+                cursor: pointer;
+            }
+        }
     }
 }

@@ -42,10 +42,10 @@
 
     &__txt{
         font-family: $font-reg;
-        font-size: 0.69rem;
+        font-size: .8rem;
         font-stretch: normal;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 600;
         letter-spacing: -.1px;
         text-align: center;
         
@@ -54,7 +54,7 @@
         // }
 
         .Button--1 &{
-            color: $color-w;
+            color: $color-7;
             // width: 8.2rem;
         
             // @include bp(1200){
@@ -73,9 +73,10 @@
 
     
     &--1{
-        background-color: $color-t;
+        background-color: $color-w;
         // flex: 0 0 12.4rem;
-        margin: 0 auto;
+        // margin: 0 auto;
+        width: 10.2rem;
         margin-top: .45rem;
         @include bp(1024){
             margin-top: 0;
@@ -96,9 +97,9 @@
             transition: all .5s;
         }
 
-        .Results__spider--wrapper &{
-            display: none;
-        }
+        // .Results__spider--wrapper &{
+        //     display: none;
+        // }
 
         &:hover{
             background-color: $color-w;
@@ -113,14 +114,22 @@
          
     }
     &--2{
-        background-color: $color-w;        
+        background-color: $color-2;        
         // flex: 0 0 10.3rem;
         margin-top: 0.45rem;
         text-decoration: none;
-        @include bp(1200){
-            // flex: 0 0 8.7rem;
-            height: 2.6rem;
-        }
+        padding: 0 0.6rem;
+        border: 1px solid $color-2;
+        margin-right: 1.25rem;
+
+        width: 8.5rem;
+        justify-content: space-between;
+        padding: 0 0.75rem;
+        // @include bp(1200){
+        //     // flex: 0 0 8.7rem;
+        //     height: 2.6rem;
+        // }
+        // width: 11.5rem;
 
         @include bp(1024){
             margin-top: 0;
@@ -135,17 +144,17 @@
             }
         }
 
-        &:hover{
-            background-color: $color-8;
+        // &:hover{
+        //     background-color: $color-8;
 
-            & > .Button__txt{
-                color: $color-7;
-            }
+        //     & > .Button__txt{
+        //         color: $color-7;
+        //     }
            
-            // & > .Button__img {
-            //     background-image: url('./assets/img__req--1.svg');
-            // }
-        }
+        //     // & > .Button__img {
+        //     //     background-image: url('./assets/img__req--1.svg');
+        //     // }
+        // }
     }
     &__copied{
         position: absolute;

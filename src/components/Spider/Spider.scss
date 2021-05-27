@@ -57,7 +57,7 @@
   }
   &__Legend {
     font-size: 10px;
-    // fill: $color-6;
+    fill: $color-10;
     font-family: $font-b1;
     text-anchor: middle;
     opacity: 0.3;
@@ -81,7 +81,7 @@
     position: absolute;
     display: block;
     width: 65%;
-    height: 70%;
+    height: 64%;
     z-index: 100;
     opacity: 0.75;
     &--1 {
@@ -92,7 +92,7 @@
     }
   }
   &__flex {
-    display: flex;
+    display: none;
     justify-content: center;
     @include bp(500) {
       margin-top: 1.5rem;
@@ -167,7 +167,7 @@
 
 .last-line {
   // stroke: black;
-  stroke: $color-6;
+  stroke: $color-9;
   stroke-opacity: 1;
   stroke-width: 5px;
   stroke-linecap: round;
