@@ -27,13 +27,13 @@ const Socials = props => {
             <div className="Socials__text">
                 Share
             </div>
-            <a rel='noreferrer' href="mailto:?&subject=Wanted%20to%20share%20CX%20Data%20Assessment%20tool&cc=&bcc=&body=Discover%20The%20Path%20to%20CX%20Data%20Excellence%0A%0Ahttp://dev.ineedcpr.com/oracle/2021/assessment_tools/cx_tool" className="Socials__icon Socials__icon--1" target="_blank"></a>
-            <a rel='noreferrer' href="https://www.facebook.com/sharer/sharer.php?u=http://dev.ineedcpr.com/oracle/2021/assessment_tools/cx_tool" target="_blank" className="Socials__icon Socials__icon--2">
-            </a>
-            <a href="https://twitter.com/intent/tweet?url=https://dev.ineedcpr.com/oracle/2021/assessment_tools/cx_tool&text=Discover%20The%20Path%20to%20CX%20Data%20Excellence" className="Socials__icon Socials__icon--3" target="_blank">    
-            </a>  
-            <a rel='noreferrer' href="https://www.linkedin.com/shareArticle?mini=true&url=http://dev.ineedcpr.com/oracle/2021/assessment_tools/cx_tool" className="Socials__icon Socials__icon--4" target="_blank">
-            </a>              
+            <div rel='noreferrer' href="mailto:?&subject=Wanted%20to%20share%20CX%20Data%20Assessment%20tool&cc=&bcc=&body=Discover%20The%20Path%20to%20CX%20Data%20Excellence%0A%0Ahttp://dev.ineedcpr.com/oracle/2021/assessment_tools/cx_tool" className="Socials__icon Socials__icon--1" target="_blank"></div>
+            <div rel='noreferrer' href="https://www.facebook.com/sharer/sharer.php?u=http://dev.ineedcpr.com/oracle/2021/assessment_tools/cx_tool" target="_blank" className="Socials__icon Socials__icon--2">
+            </div>
+            <div href="https://twitter.com/intent/tweet?url=https://dev.ineedcpr.com/oracle/2021/assessment_tools/cx_tool&text=Discover%20The%20Path%20to%20CX%20Data%20Excellence" className="Socials__icon Socials__icon--3" target="_blank">    
+            </div>  
+            <div rel='noreferrer' href="https://www.linkedin.com/shareArticle?mini=true&url=http://dev.ineedcpr.com/oracle/2021/assessment_tools/cx_tool" className="Socials__icon Socials__icon--4" target="_blank">
+            </div>              
             {/* <div className="Socials__icon Socials__icon--1"></div>
             <div className="Socials__icon Socials__icon--2"></div>
             <div className="Socials__icon Socials__icon--3"></div>
